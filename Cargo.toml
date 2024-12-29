@@ -1,0 +1,11 @@
+[package]
+name = "difm-player"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = "0.25.2"
+rust-embed = "8.5.0"
+tao = "0.30.3"
+wry = "0.46.0"
+dirs = "5.0.1"
