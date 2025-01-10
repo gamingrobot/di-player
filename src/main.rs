@@ -54,7 +54,7 @@ fn main() -> wry::Result<()> {
     let icon = load_icon("icon.png");
 
     let window = WindowBuilder::new()
-        .with_title("DI")
+        .with_title("DI Player")
         .with_window_icon(Some(icon))
         .with_inner_size(LogicalSize::new(1024.0, 1024.0))
         .build(&event_loop)
@@ -107,7 +107,7 @@ fn main() -> wry::Result<()> {
         use dirs::data_local_dir;
         let mut data_dir = None::<PathBuf>;
         if let Some(mut local_dir) = data_local_dir() {
-            local_dir.push("difm-player");
+            local_dir.push("di-player");
             data_dir = Some(local_dir);
         }
         let mut context = WebContext::new(data_dir);
