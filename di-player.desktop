@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
-Exec=env WEBKIT_DISABLE_DMABUF_RENDERER=1 '~/.local/share/di-player/di-player'
-Icon=~/.local/share/di-player/icon.png
-Name=DI.FM Player
+Exec=env WEBKIT_DISABLE_DMABUF_RENDERER=1 '/opt/di-player/di-player'
+Icon=/opt/di-player/icon.png
+Name=DI Player
 StartupNotify=true
 Terminal=false
 TerminalOptions=

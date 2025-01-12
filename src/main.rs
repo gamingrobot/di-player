@@ -89,6 +89,7 @@ fn main() -> wry::Result<()> {
     }
     #[cfg(target_os = "linux")]
     {
+        use tao::platform::unix::WindowExtUnix;
         menu_bar.init_for_gtk_window(window.gtk_window(), window.default_vbox()).unwrap();
     }
 
@@ -102,7 +103,7 @@ fn main() -> wry::Result<()> {
     #[cfg(target_os = "linux")]
     let webview = {
         use tao::platform::unix::WindowExtUnix;
-        use wry::WebViewBuilderExtUnix;
+        use wry::{WebContext, WebViewBuilderExtUnix};
         use std::path::PathBuf;
         use dirs::data_local_dir;
         let mut data_dir = None::<PathBuf>;
